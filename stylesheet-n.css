@@ -1,0 +1,181 @@
+/*---------- Sample ----------*/  
+.testtext {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #333;
+    letter-spacing: 0px;
+    background-color: #ccc;
+    width: 600px;
+    padding: 15px 15px;
+    margin: 15px 15px;
+}
+.box1{
+    background-color: #333;
+    width: 60px;
+    height: 10px;
+    /*↓↓↓要素を左右中央に配置する（上下不可）*/
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.box2{
+    background-color: #ccc;
+    width: 600px;
+    height: 10px;
+/* ボーダーはmargin=外側 padding=内側 */
+    border: 1px solid #333;
+    padding: 10px;
+    margin:15px;
+}
+
+/* 文中の一部指定 */
+span {
+    color: #fff;
+    font-size: 8px;
+}
+
+
+
+/*---------- Color Format ----------*/
+color: #ff0000;
+color: rgb( 255, 10, 10);
+color: rgba( 255, 10, 10, 0.5);
+
+/*---------- Font Format ----------*/
+.ccc {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #333;
+    letter-spacing: 0px;
+}
+
+/*-- 背景画像 --*/
+height: 200px
+background-image: url(xxx.png);
+background-size: cover;/*←埋め尽くすように拡縮*/
+
+/*-- マージン スペース --*/
+padding: 20px 20px 20px 20px;（上右下左）
+padding: 20px 10px;（上下/左右）
+padding-top: 20px;
+padding-bottom: 20px;
+padding-right: 20px;
+padding-left: 20px;
+
+/*-- リストの・を消す --*/
+list-style: none;
+
+/*-- 要素の横並び --*/
+float: left;
+float: right;
+
+/*-- クラスの中の要素指定 --*/
+.ccc h1 {}
+
+/*-- border ボーダー 線 --*/
+border: 1px solid #ff0000;
+border-top: 1px solid #ff0000;
+border-bottom: 1px solid #ff0000;
+
+/*-- 複数セレクタ */
+xxx, yyy{
+    color: #ff0000;
+    
+/*-- hober オーバー --*/
+.ccc:hover {
+    background-color: mediumpurple;
+}
+    
+/*-- 角を丸める --*/
+.xxx{
+    width: 200px;
+    height: 100px;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+/*-- 透明度 --*/
+opacity: 0.3;
+    
+/*-- テキスト整列 --*/
+text-align: left;
+text-align: center;
+text-align: right;
+
+/*-- トランジション --*/
+.aaa{
+    transition: all 1s;
+}
+.aaa:hover{
+    background-color: red;
+}
+
+/*-- 行間　行の高さ --*/
+line-height: 10px;
+
+/*-- 重ねて表示する（サイト全体の左上部を基準） --*/
+.aaa{
+    position: absolute;
+    top: 120px;
+    left: 70px;
+}
+.bbb{
+    position: absolute;
+    top: 120px;
+    left: 140px;
+}
+
+/*-- 基準点の変更（xxxの左上部が基準 --*/
+.xxx {
+    position: relative;
+}
+
+/*-- シャドー（水平＋垂直+色） --*/
+box-shadow: 10px 10px #000000;
+
+/*-- カーソル --*/
+cursor: text;
+cursor: pointer;
+cursor: default;
+
+/*-- CSSの打ち消し --*/
+.btn:active {
+    box-shadow: none;
+
+/*-- ボタンを凹ませる --*/
+.btn:active {
+    position: relative;
+    top: 6px;
+    box-shadow: none;
+}
+
+/*-- ポジション固定（top / left / right / bottom）  --*/
+.xxx {
+    position: fixed;
+    top: 10px;
+    left: 40px;
+}
+
+/*-- 重なり順 --*/
+z-index: 1;
+
+/*-- インライン要素（<a>） → ブロック要素 / インラインブロック要素 --*/
+display: block;
+display: inline-block;
+    
+/*---------- レスポンシブ ----------*/  
+/*-- 子要素を横並び 幅合わせ --*/
+display: flex;
+flex: auto
+/*-- 折り返し指定 --*/
+/* 親要素 */
+flex-wrap: wrap;
+/* 子要素 */
+width: 50%; 
+/* メディアクリエ */
+@medita(max-width: 1000px){}
+/* 子要素を上から下へ並べる */
+flex-direction: column; /* 親要素に記述 */
+margin: 0 auto; /* 子要素に記述 */
